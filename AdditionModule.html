@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<title>Addition Module Example</title>
+
+<!-- Preamble -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<!-- End preamble -->
+
+<head>
+
+<!-- MathJax Initialisation-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    showProcessingMessages: false,
+    tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+  });
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- End MathJax Initialisation-->
+ 
+ <!-- Style sheet import -->
+ <link rel="stylesheet" href="moduleTemplate2.css">
+
+</head>
+
+<body>
+
+
+
+<!-- 
+<div class="header-container Header">
+	<div class="ml5 FR ">
+		<script>document.write(theModuleTitle)</script>
+	</div>
+	<div class="mr5">
+		ACMMG271
+	</div>
+</div>
+ -->
+
+<!-- Begin title of module and logo -->
+<div class="title-container mt3 mb2">
+	<div class="ml5 F0 title-font">
+	<!-- Write the title here -->
+		Addition Module Example
+	</div>
+	<div class="mr5">
+		<img src="MPLOGO.png" class="alignrightlogo" alt="MPLOGO" width="150" height="80">
+	</div>
+</div>
+<!-- End title of module and logo -->
+
+<!-- Initial questions prompt -->
+<div class="ml5 fs3 mb3 mt3">
+	Questions
+</div>
+<!-- End initial questions prompt -->
+
+<!--Question number and text -->
+<div class="question-container ml5 mr5 mb3">
+	<div class="question-number">
+		1)
+	</div>
+	<div class="question-text">
+	Do some adding.
+	</div>
+</div>
+<!-- End question number and text -->
+
+
+<!--Question parts begin here the large question part container is the parent and each item is called question part container -->
+<div class="large-question-part-container ml6 mr5">
+	<!--Question part letter and text -->
+	<div class="question-part-container mb4 minw5">
+		<!-- container for question lettering -->
+		<div class="question-part-letter">
+			a)
+		</div>
+		<!-- end container for question lettering -->
+		<!-- container for question and answer -->
+		<div>
+			<!-- question text-->
+			<div class="question-part-text ml4" id="Q1a">
+			\( 23 + 252\)
+			</div>
+			<!-- end question text -->
+			
+			<!-- answer text -->
+			<div class="question-part-text ml3" id="Q1aA">
+			</div>
+			<!-- end answer text -->
+		</div>
+		<!-- end container for question and answer -->
+	</div>
+	<!-- End part letter and text -->
+	
+	<!--Question part letter and text -->
+	<div class="question-part-container mb4 minw5">
+		<div class="question-part-letter" onclick="showAnswer(Q1bA)">
+			b)
+		</div>
+		<!-- container for question and answer -->
+		<div>
+			<!-- question text-->
+			<div class="question-part-text ml4" id="Q1b">
+			\( 23 + 255\)
+			</div>
+			<!-- end question text -->
+			<!-- answer text -->
+			<div class="question-part-text-answer ml3 answer" id="Q1bA">
+			</div>
+			<!-- end answer text -->
+		</div>
+		<!-- end container for question and answer -->
+	</div>
+	<!-- End part letter and text -->
+	
+		<!--Question part letter and text -->
+	<div class="question-part-container mb4 minw5">
+		<div class="question-part-letter" onclick="showAnswer(Q1cA)">
+			c)
+		</div>
+		<!-- container for question and answer -->
+		<div>
+			<!-- question text-->
+			<div class="question-part-text ml4" id="Q1c">
+			\( 23 + 2542\)
+			</div>
+			<!-- end question text -->
+			<!-- answer text -->
+			<div class="question-part-text-answer ml3 answer" id="Q1cA">
+			</div>
+			<!-- end answer text -->
+		</div>
+		<!-- end container for question and answer -->
+	</div>
+	<!-- End part letter and text -->
+
+			<!--Question part letter and text -->
+	<div class="question-part-container mb4 minw5">
+		<div class="question-part-letter" onclick="showAnswer(Q1dA)">
+			d)
+		</div>
+		<!-- container for question and answer -->
+		<div>
+			<!-- question text-->
+			<div class="question-part-text ml4" id="Q1d">
+			\( 23 + 25243\)
+			</div>
+			<!-- end question text -->
+			<!-- answer text -->
+			<div class="question-part-text-answer ml3 answer" id="Q1dA">
+			</div>
+			<!-- end answer text -->
+		</div>
+		<!-- end container for question and answer -->
+	</div>
+	<!-- End part letter and text -->
+	
+<!--Large question part container ends here -->
+	</div>
+<!--Large question part container ends here -->
+
+<!-- Initial questions prompt -->
+<div class="ml5 fs3 mb3 mt3">
+	Custom Interactive Task
+</div>
+<!-- End initial questions prompt -->
+
+
+<!--Question number and text -->
+<div class="question-container ml5 mr5 mb3">
+	<div class="question-number">
+	A)
+	</div>
+	<div class="question-text">
+	Shade in boxes to create an image in the 5 by 5 grid below. A box is either shaded in or not, there are no grey areas. 
+	</div>
+</div>
+<!-- End question number and text -->
+<img class = "L" src="gridA.png"  width="250" height="250"/>
+<!--Question number and text -->
+<div class="question-container ml5 mr5 mb3">
+	<div class="question-number">
+	B)
+	</div>
+	<div class="question-text">
+	Each box represents a number. Add the numbers together for the boxes you shaded in. Enter the number below.
+	</div>
+</div>
+<!-- End question number and text -->
+<img class = "L" src="gridB.png" width="320" height="250"/>
+
+<div>
+<img class="pixel L" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+</div>
+
+<div>
+<img class="pixel L" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+</div>
+
+<div>
+<img class="pixel L" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+</div>
+
+<div>
+<img class="pixel L" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+</div>
+
+<div>
+<img class="pixel L" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+<img class="pixel" src="White.png" width="50" height="50">
+</div>
+
+		<div class="question-part-text ml3">
+		<div><br>\(\text{Answer:}\) <input type="text" id="AnswerInput"><br><br></div><button onclick="CheckAnswer()">Check Answer</button>
+		<div><br></div>
+		
+
+<script>
+
+/* this for loop finds all the elements with the class name pixel and hides them initially */
+var pixelClassHolder = document.getElementsByClassName("pixel");
+ var i=24;
+for (i = 0; i < pixelClassHolder.length; i++){
+pixelClassHolder[i].src = "White.png";
+}
+/* end for loop that finds all the elements with the class name answer and hides them initially */
+function CheckAnswer() {
+	/*assign random integers between 2 and 9 to the number of animals there are */
+	/* Gather student input about how many animals they think there are */
+	
+	for (i = 0; i < pixelClassHolder.length; i++){
+pixelClassHolder[i].src = "White.png";
+}
+	  var theNumber = document.getElementById("AnswerInput").value;
+	
+	while (i >= 0 ){
+	
+	if (theNumber >= Math.pow(2,i)){
+	pixelClassHolder[i].src = "Black.png";
+	theNumber = theNumber - Math.pow(2,i);
+	}
+	i--;
+	}
+	i=24;
+
+}
+</script>
+<!-- End question number and text -->
+ <script type="text/javascript" src="Quadratic.js"></script>
+<!-- Begin Footer -->
+<p class="Footer">Copyright &#169 Maths Pathway <script>document.write(new Date().getFullYear())</script>. Reproduction for classroom use permitted.</p>
+<!-- End Footer -->
+</body>
+</html>
